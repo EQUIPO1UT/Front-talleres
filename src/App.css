@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  text-align: center
+}
+
+/* Barra superior de avisos */
+.ticker {
+  width: 100%;
+  background: #044c3c;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.ticker-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 18s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.titulo {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.titulo h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.card-info h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-info p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.card-info .fecha {
+  font-size: 0.9rem;
+  color: #888;
+  display: block;
+}
+
+.card-info button {
+  background: #044c3c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card-info button:hover {
+  background: #444;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer button {
+  background: #044c3c;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.taller-page {
+  text-align: center;
+  padding: 3rem;
+  color: white;
+}

@@ -1,0 +1,89 @@
+/* Fondo general blanco y fuente base */
+.taller-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #222;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Tarjeta gris clara con animación */
+.taller-card {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out both;
+}
+
+/* Imagen decorativa */
+.taller-imagen {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+/* Encabezado del taller */
+.taller-card h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Párrafos */
+.taller-card p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Sección de información extra */
+.taller-info-extra {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.taller-info-extra h4 {
+  margin-bottom: 5px;
+  color: #006064;
+}
+
+/* Botón de regreso */
+.volver-btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.volver-btn button {
+  background-color: #006064;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.volver-btn button:hover {
+  background-color: #004d4d;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
